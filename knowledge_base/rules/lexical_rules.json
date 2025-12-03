@@ -1,0 +1,32 @@
+[
+  {
+    "id": "LEX-001",
+    "name": "领域上下文优先",
+    "description": "在软件工程领域，优先选择该领域的专业含义",
+    "confidence_weight": 0.85,
+    "priority": 1,
+    "examples": [
+      {
+        "sentence": "接口需要重新设计",
+        "ambiguous_element": "接口",
+        "resolution": "在软件工程上下文中，'接口'指API或类接口"
+      }
+    ],
+    "source": "domain_knowledge"
+  },
+  {
+    "id": "LEX-002",
+    "name": "共现词线索",
+    "description": "根据句子中的共现词判断多义词的具体含义",
+    "confidence_weight": 0.75,
+    "priority": 2,
+    "examples": [
+      {
+        "sentence": "系统需要实现用户接口",
+        "ambiguous_element": "接口",
+        "resolution": "与'实现'、'用户'共现，确定指软件接口"
+      }
+    ],
+    "source": "lexical_analysis"
+  }
+]

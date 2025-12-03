@@ -1,0 +1,84 @@
+{
+  "case_id": "reqs_001",
+  "input": "在用户认证模块的设计文档中，系统需要实现用户接口。该接口应支持多种认证方式，包括用户名密码、手机验证码和第三方登录。开发团队需要确保接口的安全性和易用性。",
+  "category": "词汇",
+  "ambiguity_type": "多义词歧义+指代歧义",
+  "contexts": [
+    {
+      "text": "在需求文档中，用户接口通常指用户界面（UI）",
+      "score": 0.90
+    },
+    {
+      "text": "支持多种认证方式是用户界面的典型功能特征",
+      "score": 0.85
+    },
+    {
+      "text": "应用程序接口（API）通常不直接支持用户认证方式",
+      "score": 0.75
+    }
+  ],
+  "reasoning_chain": "分析句子：系统需要实现用户接口，该接口应支持多种认证方式\n\n歧义类型：词汇歧义+指代歧义\n\n推理路径：\n路径1：第一个'接口'指用户界面(UI)，第二个'接口'指代第一个，也指UI\n路径2：第一个'接口'指应用程序接口(API)，第二个'接口'指代第一个，也指API\n\n冲突点：'接口'一词在软件工程中有多个含义（UI/API），且第二个'接口'的指代存在歧义",
+  "entailment_tree": {
+    "type": "conclusion",
+    "content": "歧义句的多种解读",
+    "children": [
+      {
+        "type": "branch",
+        "content": "歧义分叉：'接口'的多义性",
+        "ambiguity_point": "第一个'接口'的含义",
+        "children": [
+          {
+            "type": "premise",
+            "content": "'用户接口'在需求文档中通常指用户界面(UI)",
+            "children": [
+              {
+                "type": "branch",
+                "content": "第二个'接口'的指代",
+                "ambiguity_point": "指代歧义",
+                "children": [
+                  {
+                    "type": "premise",
+                    "content": "遵循最近指代原则，指代第一个'接口'(UI)",
+                    "children": [
+                      {"type": "conclusion", "content": "解读1：系统需要实现用户界面，该用户界面应支持多种认证方式", "confidence": 0.75}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "premise",
+            "content": "'用户接口'可能指用户相关的API接口",
+            "children": [
+              {
+                "type": "branch",
+                "content": "第二个'接口'的指代",
+                "ambiguity_point": "指代歧义",
+                "children": [
+                  {
+                    "type": "premise",
+                    "content": "遵循最近指代原则，指代第一个'接口'(API)",
+                    "children": [
+                      {"type": "conclusion", "content": "解读2：系统需要实现用户API接口，该API接口应支持多种认证方式", "confidence": 0.65}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "text": "系统需要实现用户界面，该用户界面应支持多种认证方式，包括用户名密码、手机验证码和第三方登录。",
+      "confidence": 0.75
+    },
+    {
+      "text": "系统需要实现用户API接口，该API接口应支持多种认证方式，包括用户名密码、手机验证码和第三方登录。",
+      "confidence": 0.65
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "SEG-001",
+    "name": "最长匹配原则",
+    "description": "在分词歧义中，优先选择最长的匹配词",
+    "confidence_weight": 0.70,
+    "priority": 2,
+    "examples": [
+      {
+        "sentence": "系统架构设计文档",
+        "ambiguous_element": "系统架构设计",
+        "resolution": "应分词为'系统架构设计'（最长匹配）而非'系统'/'架构设计'"
+      }
+    ],
+    "source": "segmentation_algorithm"
+  },
+  {
+    "id": "SEG-002",
+    "name": "领域术语优先",
+    "description": "在软件工程文本中，优先识别领域术语作为完整词",
+    "confidence_weight": 0.80,
+    "priority": 1,
+    "examples": [
+      {
+        "sentence": "需求分析阶段",
+        "ambiguous_element": "需求分析",
+        "resolution": "'需求分析'是软件工程领域术语，应作为整体识别"
+      }
+    ],
+    "source": "domain_terminology"
+  }
+]

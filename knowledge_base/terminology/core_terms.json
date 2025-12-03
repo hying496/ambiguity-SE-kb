@@ -1,0 +1,72 @@
+[
+  {
+    "id": "TERM-001",
+    "term": "接口",
+    "meanings": [
+      {
+        "domain": "软件工程",
+        "semantic": "定义了一组方法签名的抽象类型，用于规范类的行为",
+        "disambiguation_clues": ["实现", "类", "方法", "API", "定义", "规范"],
+        "examples": [
+          "用户接口定义了登录方法",
+          "系统需要实现这个接口",
+          "接口规范了类的行为"
+        ],
+        "confidence": 0.90
+      },
+      {
+        "domain": "硬件",
+        "semantic": "连接不同硬件设备的物理或逻辑连接点",
+        "disambiguation_clues": ["硬件", "设备", "连接", "端口", "USB", "物理"],
+        "examples": [
+          "USB接口连接外部设备",
+          "网络接口配置",
+          "硬件接口标准"
+        ],
+        "confidence": 0.90
+      },
+      {
+        "domain": "软件工程",
+        "semantic": "用户界面（User Interface, UI）",
+        "disambiguation_clues": ["用户", "界面", "UI", "交互", "登录", "认证"],
+        "examples": [
+          "用户接口需要支持多种认证方式",
+          "接口设计要符合用户体验",
+          "登录接口界面"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "frequency": 0.95,
+    "source": "domain_terminology"
+  },
+  {
+    "id": "TERM-002",
+    "term": "模块",
+    "meanings": [
+      {
+        "domain": "软件工程",
+        "semantic": "软件系统中相对独立的功能单元，具有明确的接口和职责",
+        "disambiguation_clues": ["功能", "系统", "开发", "代码", "独立", "职责"],
+        "examples": [
+          "用户管理模块负责用户认证",
+          "系统分为多个功能模块",
+          "模块之间通过接口通信"
+        ],
+        "confidence": 0.90
+      },
+      {
+        "domain": "通用",
+        "semantic": "可以组合或分离的标准化单元",
+        "disambiguation_clues": ["组合", "单元", "标准化", "建筑", "教育"],
+        "examples": [
+          "建筑模块化设计",
+          "教育模块课程"
+        ],
+        "confidence": 0.70
+      }
+    ],
+    "frequency": 0.90,
+    "source": "domain_terminology"
+  }
+]

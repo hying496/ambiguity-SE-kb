@@ -1,0 +1,32 @@
+[
+  {
+    "id": "REF-001",
+    "name": "最近指代原则",
+    "description": "当存在多个可能的指代对象时，优先选择距离最近的前述实体",
+    "confidence_weight": 0.85,
+    "priority": 1,
+    "examples": [
+      {
+        "sentence": "用户提交了需求，系统处理了它。",
+        "ambiguous_element": "它",
+        "resolution": "它指代'需求'（最近的前述实体）"
+      }
+    ],
+    "source": "linguistic_principle"
+  },
+  {
+    "id": "REF-002",
+    "name": "语法角色匹配原则",
+    "description": "代词倾向于指代与其语法角色匹配的前述实体（如主语指代主语）",
+    "confidence_weight": 0.75,
+    "priority": 2,
+    "examples": [
+      {
+        "sentence": "开发团队完成了模块，他们开始测试。",
+        "ambiguous_element": "他们",
+        "resolution": "他们指代'开发团队'（主语指代主语）"
+      }
+    ],
+    "source": "linguistic_principle"
+  }
+]

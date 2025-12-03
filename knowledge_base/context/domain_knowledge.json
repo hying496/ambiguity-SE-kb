@@ -1,0 +1,35 @@
+[
+  {
+    "id": "CTX-001",
+    "knowledge": "需求分析在设计之前",
+    "description": "软件工程生命周期中，需求分析阶段通常在设计阶段之前进行",
+    "confidence": 0.95,
+    "examples": [
+      "在需求分析完成后，我们开始系统设计",
+      "设计阶段需要参考需求分析的结果"
+    ],
+    "source": "domain_expertise"
+  },
+  {
+    "id": "CTX-002",
+    "knowledge": "接口需要被实现",
+    "description": "在软件工程中，接口定义规范，类实现接口",
+    "confidence": 0.90,
+    "examples": [
+      "用户接口定义了登录方法，需要由用户服务类实现",
+      "系统接口规范了数据访问的标准"
+    ],
+    "source": "domain_expertise"
+  },
+  {
+    "id": "CTX-003",
+    "knowledge": "模块具有独立功能",
+    "description": "软件模块是相对独立的功能单元，具有明确的职责边界",
+    "confidence": 0.90,
+    "examples": [
+      "用户管理模块负责用户认证和授权",
+      "支付模块处理所有交易相关功能"
+    ],
+    "source": "domain_expertise"
+  }
+]

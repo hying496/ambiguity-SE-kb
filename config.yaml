@@ -1,0 +1,24 @@
+# RAG系统配置文件
+
+vector_db:
+  db_type: "milvus"  # 或 "qdrant"
+  host: "localhost"
+  port: 19530
+  collection_name: "ambiguity_kb"
+  dimension: 384  # 根据embedding模型调整
+  metric_type: "L2"
+
+embedding:
+  model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  device: "cpu"  # 或 "cuda"
+  max_length: 512
+
+retrieval:
+  top_k: 10
+  score_threshold: 0.5
+  enable_rerank: true
+
+knowledge_base:
+  path: "knowledge_base"
+
+

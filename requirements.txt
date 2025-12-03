@@ -1,0 +1,16 @@
+# 核心依赖
+numpy>=1.24.0
+sentence-transformers>=2.2.0
+torch>=2.0.0
+
+# 向量数据库
+pymilvus>=2.3.0
+# qdrant-client>=1.6.0  # 如需使用Qdrant，取消注释
+
+# 数据处理
+jsonschema>=4.17.0
+
+# 工具
+python-dotenv>=1.0.0
+
+

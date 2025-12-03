@@ -1,0 +1,32 @@
+[
+  {
+    "id": "SYN-001",
+    "name": "动宾关系判断",
+    "description": "根据动词的语义特征和上下文判断其宾语关系",
+    "confidence_weight": 0.75,
+    "priority": 2,
+    "examples": [
+      {
+        "sentence": "设计系统架构",
+        "ambiguous_element": "系统架构",
+        "resolution": "'系统架构'是'设计'的宾语"
+      }
+    ],
+    "source": "syntactic_analysis"
+  },
+  {
+    "id": "SYN-002",
+    "name": "偏正结构识别",
+    "description": "识别'的'字结构中的偏正关系，确定修饰语和被修饰语",
+    "confidence_weight": 0.80,
+    "priority": 1,
+    "examples": [
+      {
+        "sentence": "用户的需求文档",
+        "ambiguous_element": "用户的需求",
+        "resolution": "'用户'修饰'需求'，'需求文档'是整体宾语"
+      }
+    ],
+    "source": "syntactic_analysis"
+  }
+]
